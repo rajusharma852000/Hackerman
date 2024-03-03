@@ -1,0 +1,150 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: linear-gradient(112.1deg, rgb(44, 2, 2) 11.4%, rgb(0, 0, 0) 70.2%);
+    color: #29a829;
+}
+
+.gradient-background {
+    background: linear-gradient(112.1deg, rgb(44, 2, 2) 11.4%, rgb(0, 0, 0) 70.2%);
+    color: red;
+}
+
+.class-done-button {
+    color: red;
+    background-color: black;
+    margin-top: 15px;
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 4px 12px;
+    width: 175px;
+    height: 50px;
+    font-weight: bold;
+}
+.class-done-button:hover{
+    color: red;
+    background-color: rgb(32, 6, 6);
+}
+
+.class-textarea {
+    line-height: 1.4rem;
+    width: 400px;
+    height: 57px;
+    font-size: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 18px;
+    padding-left: 19px;
+}
+
+.container-1 {
+    overflow: atuo;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    word-spacing: 50px;
+    font-size: 17px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container-2 {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 300px;
+    border-radius: 20px;
+    background: linear-gradient(112.1deg, rgb(34, 26, 10) 11.4%, rgb(1, 6, 24) 70.2%);
+    z-index: 1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+}
+.container-1 p{
+    margin-top: 80px;
+    line-height: 40px;
+    word-spacing: 150px;
+    font-size: 17px;
+}
+.container-1::before {
+    content: "";
+    position: absolute;
+    background-image: url('images/bg3.jpg');
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+.span-tag{
+    font-weight: bold;
+    color: green;
+    font-size: 20px
+}
+#id-span1{
+    position: absolute;
+    left: 2%;
+    top: 5%;
+}
+#id-span2{
+    position: absolute;
+    left: 34%;
+    top: 10%;
+}
+#id-span3{
+    position: absolute;
+    left: 7%;
+    /* top: 130px; */
+    top: 26%;
+}
+#id-span4{
+    position: absolute;
+    right: 2%;
+    /* top: 200px; */
+    top: 35%;
+}
+#id-span5{
+    position: absolute;
+    left: 18%;
+    /* top: 250px; */
+    top: 47%;
+}
+#id-span6{
+    position: absolute;
+    left: 1%;
+    /* top: 290px; */
+    top: 54%;
+}
+#id-span7{
+    position: absolute;
+    right: 1%;
+    /* top: 340px; */
+    top: 63%;
+}
+#id-span8{
+    position: absolute;
+    left: 20%;
+    top: 71%;
+}
+#id-span9{
+    position: absolute;
+    right: 10%;
+    /* top: 440px; */
+    top: 77%;
+}
+#id-span10{
+    position: absolute;
+    left: 3%;
+    top: 87%;
+}
