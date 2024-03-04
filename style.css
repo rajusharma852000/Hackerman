@@ -1,10 +1,21 @@
 html {
     height: 100%;
+    height: 100vh;
     width: 100%;
+    width: 100vw;
 }
 *{
     margin: 0px;
     padding: 0px;
+}
+@media screen and (max-width: 420px) {
+    a{
+        font-size: 1.2rem; 
+    }
+} 
+a{
+    color: red;
+    font-size: 1.9rem;
 }
 body{
     background: linear-gradient(112.1deg, rgb(44, 2, 2) 11.4%, rgb(0, 0, 0) 70.2%);
@@ -17,15 +28,17 @@ body{
 }
 
 .class-done-button {
+    overflow: auto;
+    position: relative;
     color: red;
     background-color: black;
-    margin-top: 15px;
-    font-size: 30px;
-    border-radius: 10px;
-    padding: 4px 12px;
-    width: 175px;
-    height: 50px;
+    margin-top: 2%;
+    font-size: 1.9rem;
+    border-radius: 0.6rem;
+    width: 45%;
+    height: 20%;
     font-weight: bold;
+    opacity: 0.8;
 }
 .class-done-button:hover{
     color: red;
@@ -33,10 +46,12 @@ body{
 }
 
 .class-textarea {
+    position: relative;
     line-height: 1.4rem;
-    width: 400px;
-    height: 57px;
-    font-size: 15px;
+    word-wrap: break-word;
+    width: 70%;
+    height: 30%;
+    font-size: 1rem;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -46,11 +61,10 @@ body{
 }
 
 .container-1 {
-    overflow: atuo;
-    line-height: 30px;
     display: flex;
     justify-content: center;
     text-align: center;
+    line-height: 30px;
     word-spacing: 50px;
     font-size: 17px;
     height: 100vh;
@@ -58,12 +72,12 @@ body{
 }
 
 .container-2 {
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 600px;
-    height: 300px;
+    width: 44%;
+    height: 50%;
     border-radius: 20px;
     background: linear-gradient(112.1deg, rgb(34, 26, 10) 11.4%, rgb(1, 6, 24) 70.2%);
     z-index: 1;
@@ -73,16 +87,11 @@ body{
     transform: translate(-50%, -50%);
     opacity: 0.8;
 }
-.container-1 p{
-    margin-top: 80px;
-    line-height: 40px;
-    word-spacing: 150px;
-    font-size: 17px;
-}
 .container-1::before {
     content: "";
     position: absolute;
     background-image: url('images/bg3.jpg');
+    /* background-size: cover; */
     width: 100vw;
     height: 100vh;
     z-index: -1;
@@ -90,7 +99,7 @@ body{
 .span-tag{
     font-weight: bold;
     color: green;
-    font-size: 20px
+    font-size: 1.4rem;
 }
 #id-span1{
     position: absolute;
@@ -105,31 +114,26 @@ body{
 #id-span3{
     position: absolute;
     left: 7%;
-    /* top: 130px; */
     top: 26%;
 }
 #id-span4{
     position: absolute;
     right: 2%;
-    /* top: 200px; */
     top: 35%;
 }
 #id-span5{
     position: absolute;
     left: 18%;
-    /* top: 250px; */
     top: 47%;
 }
 #id-span6{
     position: absolute;
     left: 1%;
-    /* top: 290px; */
     top: 54%;
 }
 #id-span7{
     position: absolute;
     right: 1%;
-    /* top: 340px; */
     top: 63%;
 }
 #id-span8{
@@ -140,7 +144,6 @@ body{
 #id-span9{
     position: absolute;
     right: 10%;
-    /* top: 440px; */
     top: 77%;
 }
 #id-span10{
