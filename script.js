@@ -13,7 +13,7 @@ container2.insertBefore(textarea, container2.firstChild);
 //submit button 
 let submit = document.createElement('button');
 container2.insertAdjacentElement('beforeend', submit);
-submit.innerHTML = "<a href='submit.html' target='_main'>RETRIEVE</a>"
+submit.innerHTML = "<a href='submit.html' target='_main' color='red'>RETRIEVE</a>"
 submit.type = 'submit';
 submit.classList.add('class-done-button');
 
@@ -144,12 +144,14 @@ const simulateTyping = async () => {
 }
 simulateTyping();
 
+
 const GenerateBinarySequence = async () => {
     let intervalId1 = setInterval(() => {
         for (let x = 1; x <= 10; x++) {
             let newSpan = document.getElementById(`id-span${x}`);
             let num = "";
-            for (let i = 0; i < 25; i++) {
+            // for (let i = 0; i < 15; i++) {
+            for (let i = 0; i < 10; i++) {
                 num += Math.floor(Math.random() * 2);
             }
             newSpan.innerHTML = num; // Assigning num to the innerHTML of the span
